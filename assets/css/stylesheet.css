@@ -124,6 +124,22 @@ a:hover {
   transition: opacity 250ms ease-in-out 250ms;
 }
 
+/* Style for main body of written content on all pages */
+.testimonials {
+  font-style: italic;
+}
+
+.testimony-names {
+  text-indent: 20px;
+  font-size: 80%;
+  font-weight: bold;
+}
+
+section {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
 /* ---------- Map  ---------- */
 /* In this map section I used learning and resources from "https://www.embedgooglemap.net/" and also "https://www.w3schools.com/howto/howto_css_responsive_iframes.asp" */
 iframe {
@@ -134,7 +150,6 @@ iframe {
 
 .map {
   position: relative;
-  border: 1px solid gray;
   height: 300px;
   width: 100%;
 }
@@ -156,12 +171,14 @@ iframe {
   width: 100%;
 }
 
+/* Style for image content */
 .hero-image {
   display: inline-block;
-text-align: center;
-padding-top: 190px;
+  text-align: center;
+  padding-top: 190px;
 }
 
+/* Style for footer and footer and content */
 footer {
   background-color: cadetblue;
 }
