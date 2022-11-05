@@ -17,7 +17,7 @@ header {
   width: 100%;
   height: 150px;
   align-content: center;
-  background-color: cadetblue;
+  background: linear-gradient(to top, #3b5998 0%, #26a7de 100%);
   text-align: center;
   position: fixed;
   z-index: 999;
@@ -25,8 +25,8 @@ header {
 }
 
 .logo {
-  height: 150px;
-  width: 150px;
+  height: 125px;
+  width: 125px;
   padding: 10px;
   border-radius: 50%;
   align-items: center;
@@ -101,7 +101,7 @@ nav li {
   margin-left: 1em;
 }
 
-footer nav a {
+.footer nav a {
   text-decoration: none;
   font-size: 0.60rem;
   font-weight: bold;
@@ -110,7 +110,7 @@ footer nav a {
   transition: opacity 150ms ease-in-out;
 }
 
-footer nav,
+.footer nav,
 a:hover {
   color: #000;
 }
@@ -124,7 +124,17 @@ a:hover {
   transition: opacity 250ms ease-in-out 250ms;
 }
 
-/* Style for main body of written content on all pages */
+/* Style for written content on main body */
+
+article {
+  padding-top: 5px;
+  padding-bottom: 15px;
+  margin-top: 3px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+
 .testimonials {
   font-style: italic;
 }
@@ -152,6 +162,7 @@ iframe {
   position: relative;
   height: 300px;
   width: 100%;
+  padding: 10px;
 }
 
 .responsive-iframe {
@@ -179,9 +190,27 @@ iframe {
 }
 
 /* Style for footer and footer and content */
-footer {
-  background-color: cadetblue;
+.footer {
+  align-items: center;
+  display: flex;
+  height: 70px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(to top, #26a7de 0%, #3b5998 100%);
+  text-transform: uppercase;
+  width: 100%;
 }
+
+.footer a {
+  color: white;
+  vertical-align: auto;
+}
+
+.bacp-badge {
+    height: 50px;
+  
+  }
 
 
 /* Media Queiries Section */
