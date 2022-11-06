@@ -1,20 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,300;0,8..144,400;1,8..144,300;1,8..144,400&display=swap');
 
 
+/* part of the code for the navigation which is further below, but has been kept seperate to ensure entries are written according to specificity */
 :root {
   background-color: white;
 }
-
+/* part of the code for the navigation which is further below, but has been kept seperate to ensure entries are written according to specificity */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
-body {
+body {font-size: 110%;
   margin: 0;
   font-family: "Roboto";
   color: #0b173a;
+  background-image: url(assets/images/sand2000.jpg)
+}
+
+h1, h2 {
+  text-decoration: underline;
+}
+
+hr {
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 /* ---------- Style for navigation starts here ---------- */
@@ -25,7 +36,7 @@ This is a link to his codepen profile where the code for this can be found: http
 And this is his Github profile: https://github.com/kevin-powell  */
 header {
   width: 100%;
-  height: 150px;
+  height: 125px;
   align-content: center;
   background: linear-gradient(to top, #3b5998 0%, #26a7de 100%);
   text-align: center;
@@ -40,7 +51,6 @@ header {
   padding: 10px;
   border-radius: 50%;
   align-items: center;
-  align-content: center;
 }
 
 .nav-toggle {
@@ -136,6 +146,19 @@ a:hover {
 }
 
 /* Style for written content on main body */
+.testimonials {
+  font-style: italic;
+}
+
+.testimony-names {
+  font-size: 80%;
+  font-weight: bold;
+  line-height: 70%;
+}
+
+.counselling-is {
+  align-content: center;
+}
 
 article {
   padding-top: 5px;
@@ -145,20 +168,16 @@ article {
   margin-right: 10%;
 }
 
-
-.testimonials {
-  font-style: italic;
-}
-
-.testimony-names {
-  text-indent: 20px;
-  font-size: 80%;
-  font-weight: bold;
-}
-
 section {
   margin-left: 10%;
   margin-right: 10%;
+}
+
+.p-policy {
+  padding-top: 130px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
 }
 
 /* ---------- Map  ---------- */
@@ -195,14 +214,23 @@ iframe {
 
 /* Style for image content */
 .hero-image {
+  padding-top: 190px;
   display: inline-block;
   text-align: center;
-  padding-top: 190px;
+  margin-left: 25%;
+  margin-right: 25%;
 }
 
 
 .listening {
   padding-top: 190px;
+  display: inline-block;
+  text-align: center;
+  margin-left: 35%;
+  margin-right: 35%;
+}
+
+.three-heads {
   display: inline-block;
   text-align: center;
   margin-left: 25%;
