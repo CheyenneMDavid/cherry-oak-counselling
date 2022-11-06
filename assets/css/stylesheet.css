@@ -18,7 +18,7 @@ body {
   margin: 0;
   font-family: "Roboto";
   color: #0b173a;
-  background-image: url(assets/images/sand2000.jpg)
+  background-image: url("assets/images/sand.webp")
 }
 
 h1,
@@ -126,7 +126,7 @@ nav li {
   margin-left: 1em;
 }
 
-.footer nav a {
+nav a {
   text-decoration: none;
   font-size: 0.60rem;
   font-weight: bold;
@@ -135,7 +135,7 @@ nav li {
   transition: opacity 150ms ease-in-out;
 }
 
-.footer nav,
+nav,
 a:hover {
   color: #000;
 }
@@ -183,8 +183,18 @@ section {
   padding-bottom: 90px;
 }
 
+.reachout {
+  text-align: center;
+  text-decoration: underline;
+}
+
+
 /* ---------- Map  ---------- */
-/* In this map section I used learning and resources from "https://www.embedgooglemap.net/" and also "https://www.w3schools.com/howto/howto_css_responsive_iframes.asp" */
+/* In this map section I used learning and resources from "https://www.embedgooglemap.net/" and also "https://www.w3schools.com/howto/howto_css_responsive_iframes.asp", here. */
+.map-address-container {
+  margin-bottom: 100px;
+}
+
 iframe {
   width: 800px;
   height: 300px;
@@ -193,9 +203,9 @@ iframe {
 
 .map {
   position: relative;
+  text-align: right;
   height: 300px;
   width: 100%;
-  padding: 10px;
 }
 
 .responsive-iframe {
@@ -215,25 +225,42 @@ iframe {
   width: 100%;
 }
 
+
 /* Style for image content */
-.hero-image {
+#hero-image {
+  display: inline-block;
+  text-align: center;
   padding-top: 190px;
+}
+
+#best-life {
   display: inline-block;
+  text-align: center;
+  width: 100%;
+}
+
+#listening {
+  display: inline-block;
+  text-align: center;
+  padding-top: 180px;
+}
+
+.mix-blend-mode {
+  mix-blend-mode: multiply;
+}
+
+.bacp-badge {
+  height: 50px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+/* ---------- Style for contact-form page  ---------- */
+legend {
   text-align: center;
 }
 
 
-.listening {
-  padding-top: 190px;
-  padding-bottom: 80px;
-  display: inline-block;
-  text-align: center;
-}
-
-.three-heads {
-  display: inline-block;
-  text-align: center;
-}
 
 /* Style for footer and footer and content */
 .footer {
@@ -254,13 +281,14 @@ iframe {
   font-size: 80%;
 }
 
-.bacp-badge {
-  padding-left: 25px;
-  padding-right: 20px;
-  height: 50px;
+
+.bacp-container {
+  padding: 10px 30px 10px 30px;
+  float: left;
 }
 
 
+/* Media Queiries Section */
 /* Media Queiries Section */
 @media screen and (min-width: 800px) {
   .nav-toggle-label {
@@ -313,4 +341,26 @@ iframe {
     transform: scale(0, 1);
     transition: transform ease-in-out 250ms;
   }
+
+  .address-map-container {
+    display: flex;
+  }
+
+  .address {
+    padding: 10px;
+    width: 100%;
+    float: left;
+  }
+
+  .map {
+    padding: 10px;
+    width: 100%;
+    float: right;
+  }
+
+  nav a:hover::before {
+    transform: scale(1, 1);
+  }
+
 }
+
