@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,300;0,8..144,400;1,8..144,300;1,8..144,400&display=swap');
 
-
 /* part of the code for the navigation which is further below, but has been kept seperate to ensure entries are written according to specificity */
 :root {
   background-color: rgb(210, 202, 182);
@@ -186,7 +185,6 @@ section {
   padding-bottom: 90px;
 }
 
-
 .address-map-container {
   padding-bottom: 80px;
 }
@@ -227,7 +225,6 @@ iframe {
   background: none !important;
   width: 100%;
 }
-
 
 /* Style for image content */
 #hero-image {
@@ -285,8 +282,6 @@ select {
   display: block;
 }
 
-
-
 /* Style for footer and footer and content */
 .footer {
   align-items: center;
@@ -306,12 +301,10 @@ select {
   font-size: 80%;
 }
 
-
 .bacp-container {
   padding: 10px 30px 10px 30px;
   float: left;
 }
-
 
 /* Media Queiries Section */
 /* Media Queiries Section */
