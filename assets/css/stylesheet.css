@@ -3,7 +3,7 @@
 
 /* part of the code for the navigation which is further below, but has been kept seperate to ensure entries are written according to specificity */
 :root {
-  background-color: white;
+  background-color: rgb(210, 202, 182);
 }
 
 /* part of the code for the navigation which is further below, but has been kept seperate to ensure entries are written according to specificity */
@@ -19,6 +19,9 @@ body {
   font-family: "Roboto";
   color: #0b173a;
   background-image: url("../images/sand.webp");
+
+  background-size: 100%;
+
 }
 
 h1,
@@ -126,7 +129,7 @@ nav li {
   margin-left: 1em;
 }
 
-p a, nav a {
+nav a {
   text-decoration: none;
   font-size: 0.60rem;
   font-weight: bold;
@@ -135,7 +138,7 @@ p a, nav a {
   transition: opacity 150ms ease-in-out;
 }
 
-.footer p a, nav,
+nav,
 a:hover {
   color: #000;
 }
@@ -185,7 +188,6 @@ section {
 
 
 .address-map-container {
-border-top: 2px solid gray;
   padding-bottom: 80px;
 }
 
@@ -193,12 +195,6 @@ border-top: 2px solid gray;
   text-align: center;
   text-decoration: underline;
 }
-
-.address p {
-  display: flex;
-
-}
-
 
 /* ---------- Map  ---------- */
 /* In this map section I used learning and resources from "https://www.embedgooglemap.net/" and also "https://www.w3schools.com/howto/howto_css_responsive_iframes.asp", here. */
@@ -238,6 +234,7 @@ iframe {
   display: inline-block;
   text-align: center;
   padding-top: 190px;
+  width: 100%;
 }
 
 #best-life {
@@ -250,9 +247,10 @@ iframe {
   display: inline-block;
   text-align: center;
   padding-top: 180px;
+  width: 100%;
 }
 
-.mix-blend-mode {
+.mix-blend {
   mix-blend-mode: multiply;
 }
 
@@ -265,6 +263,26 @@ iframe {
 /* ---------- Style for contact-form page  ---------- */
 legend {
   text-align: center;
+}
+
+fieldset {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  border: 1px solid gray;
+  background-color: rgba(39, 101, 245, 0.20);
+}
+
+label,
+input,
+select {
+  width: 90%;
+  margin: auto;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  display: block;
 }
 
 
@@ -351,6 +369,7 @@ legend {
 
   .address-map-container {
     display: flex;
+    align-content: center;
   }
 
   .address {
@@ -369,5 +388,9 @@ legend {
     transform: scale(1, 1);
   }
 
+  fieldset {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
-
