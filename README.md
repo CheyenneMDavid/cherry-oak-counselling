@@ -66,7 +66,7 @@ These are examples of how Lighthouse was incorrectly pulling them.  One in deskt
 ![](assets/images/mob-policy.PNG)
 
 ## Unfixed Bugs
-I'm unsure if this really qualifies, but I'm listing it here as it probably needs to be addressed.  When initially checking the pages for responsiveness, all pages passed, proving to be sturdy, well below the 340px width for a Galaxy S9.  And that is still the case.  However, since I started writing this document, I've since gone to send the site link and found that on a "real" galaxy S9, the image in the back ground breaks, despite DevTools not picking up the break until 262px width.
+I'm unsure if this really qualifies, but I'm listing it here as it probably needs to be addressed.  When initially checking the pages for responsiveness, all pages passed, proving to be sturdy, well below the 320px width for a Galaxy S9.  And that is still the case.  However, since I started writing this document, I've since gone to send the site link and found that on a "real" galaxy S9, the image in the back ground breaks, despite DevTools not picking up the break until 262px width.
 
 ## Deployment
 This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub)
