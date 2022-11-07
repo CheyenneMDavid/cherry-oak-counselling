@@ -41,7 +41,9 @@ This number would be an official number which shows that the therapist is accred
  The  third button on the navigation will take the user to the contact form, where they can leave there details if that's their preference.  This form is also accessible via a link in the address and map area on the landing page.
  
  ### Features Left to Implement
- Another future idea
+ The Contact-Form requires attention.  its is happily responsive down to the resolutions of a Samsung Galaxy S9 and up to a resolution of 1920 x 1080.  But the japanese sand art background image doesn't work well with a tab S4.
+
+ Also, another future ideasgit  
 
 
  # Testing
